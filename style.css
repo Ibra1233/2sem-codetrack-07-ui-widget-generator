@@ -294,3 +294,18 @@ html, body { overflow-x: hidden; }
   gap:.5rem;
   background: var(--color-surface);
 }
+
+
+/* --- NYT: Knap-widget stil --- */
+.my-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+.my-button:hover {
+  opacity: 0.9;
+}

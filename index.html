@@ -1,53 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
   <meta charset="UTF-8" />
-  <title>UI Widget Generator</title>
+  <title>UI Widget Generator — Knap Widget</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <h1>UI Widget Generator</h1>
-  </header>
-  <div class="main-container">
-    <div class="workspace">
-      <section class="section widget-preview" id="widget-preview">
-        <div class="section-header">
-          <span>Preview</span>
-          <div class="header-actions">
-            <button id="toggle-code-btn" class="btn-secondary" aria-expanded="false" aria-controls="code-output">Show Code</button>
-          </div>
-        </div>
-        <div class="section-content"><!-- Widget renders here --></div>
-      </section>
+<header class="site-header">
+  <h1>UI Widget Generator – Din egen knap</h1>
+</header>
 
-      <section class="section code-output collapsed" id="code-output" aria-hidden="true">
-        <div class="section-header">
-          <span>Generated Code</span>
-          <div class="header-actions">
-            <button class="copy-button" type="button">Copy</button>
-          </div>
-        </div>
-        <div class="section-content">
-          <div class="code-content"></div>
-        </div>
-      </section>
-    </div>
-
-    <aside class="section controls-container" id="controls-panel" aria-label="Controls Panel">
+<div class="main-container">
+  <div class="workspace">
+    <section class="section widget-preview" id="widget-preview">
       <div class="section-header">
-        <span>Widget Controls</span>
-        <button id="close-controls" type="button" aria-label="Close Controls">✕</button>
+        <span>Preview</span>
+        <div class="header-actions">
+          <button id="toggle-code-btn" class="btn-secondary" aria-expanded="false" aria-controls="code-output">Show Code</button>
+        </div>
       </div>
-      <div class="section-content controls-content">
-        <div id="tweakpane-container"></div>
+      <div class="section-content"><!-- Widget renders here --></div>
+    </section>
+
+    <section class="section code-output collapsed" id="code-output" aria-hidden="true">
+      <div class="section-header">
+        <span>Generated Code</span>
+        <div class="header-actions">
+          <button class="copy-button" type="button">Copy</button>
+        </div>
       </div>
-    </aside>
+      <div class="section-content">
+        <div class="code-content"></div>
+      </div>
+    </section>
   </div>
 
-  <button id="floating-controls-toggle" class="floating-toggle" type="button" aria-expanded="false" aria-controls="controls-panel">Controls</button>
-  <!-- ES module entry -->
-  <script type="module" src="main.js"></script>
+  <aside class="section controls-container" id="controls-panel" aria-label="Controls Panel">
+    <div class="section-header">
+      <span>Widget Controls</span>
+      <button id="close-controls" type="button" aria-label="Close Controls">✕</button>
+    </div>
+    <div class="section-content controls-content">
+      <div id="tweakpane-container"></div>
+    </div>
+  </aside>
+</div>
+
+<button id="floating-controls-toggle" class="floating-toggle" type="button" aria-expanded="false" aria-controls="controls-panel">Controls</button>
+
+<!-- ESM -->
+<script type="module" src="main.js"></script>
 </body>
 </html>
